@@ -23,6 +23,8 @@ class State:
             pass
         elif self.display_mode == "octal":
             pass
+        elif self.display_mode == "Err"
+            pass
         else:
             self.error()
         print("current display is:", self.display)
