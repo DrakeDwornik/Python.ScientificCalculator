@@ -127,6 +127,7 @@ def screen_options():
         result = calc.invsine(x)
         return result
 
+
     elif Operation == 13:
         print("Inverse Cosine")
         print("Enter the number: ")
@@ -158,7 +159,7 @@ def screen_options():
 
     elif Operation == 17:
         print("MCR")
-        store_choice = input("Do you want to clear memory? Y or N (case sensitive): ")
+        store_choice = capitalize(input("Do you want to clear memory? Y or N: ")
         if store_choice == "Y":
             memStore = 0
         else:
@@ -262,7 +263,7 @@ def secondary_operation():
             print('Empty')
 
     elif Operation == 11:
-        store_choice = input("Do you want to clear memory? Y or N (case sensitive): ")
+        store_choice = capitalize(input("Do you want to clear memory? Y or N: ")
         if store_choice == "Y":
             memStore = 0
         else:
@@ -288,7 +289,7 @@ while condi:
     print(f"Result: {returned_result}")
     choose_data_type()
     print("")
-    cont = input("Continue with current value? Y or N (case sensitive): ")
+    cont = capitalize(input("Do you want to clear memory? Y or N: ")
     print('')
     if cont == "Y":
         condi2 = True
@@ -297,7 +298,7 @@ while condi:
             print(f"Result: {returned_result}")
             choose_data_type()
             print("")
-            cont2 = input("Continue with current value? Y or N (case sensitive): ")
+            cont2 = capitalize(input("Do you want to clear memory? Y or N: ")
             print("")
             if cont2 == "Y":
                 condi2 = True
